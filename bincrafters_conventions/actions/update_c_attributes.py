@@ -3,6 +3,8 @@ import re
 
 def update_c_topics(main, file):
     """ Update topics tuple
+    :param main: Output stream
+    :param file: Conanfile path
     """
 
     conanfile = open(file).read()
@@ -24,6 +26,8 @@ def update_c_topics(main, file):
 
 def update_c_author(main, file):
     """ Update author tuple
+    :param main: Output stream
+    :param file: Conanfile path
     """
 
     conanfile = open(file).read()

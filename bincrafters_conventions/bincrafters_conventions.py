@@ -12,6 +12,7 @@ import contextlib
 import re
 from .actions.check_for_spdx_license import check_for_spdx_license
 from .actions.check_for_download_hash import check_for_download_hash
+from .actions.check_for_github_settings_yml import check_for_github_settings_yml
 from .actions.check_for_readme import check_for_readme
 from .actions.check_for_license import check_for_license
 from .actions.check_for_deprecated_generators import check_for_deprecated_generators
@@ -326,6 +327,7 @@ class Command(object):
         """
         return (check_for_readme(self),
                 check_for_license(self),
+                check_for_github_settings_yml(self),
                 check_for_required_attributes(self, conanfile),
                 check_for_spdx_license(self, conanfile),
                 check_for_download_hash(self, conanfile),

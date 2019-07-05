@@ -5,7 +5,7 @@ from conans.errors import ConanException
 
 
 def check_for_deprecated_generators(main, file):
-    """  Check if the conan file if using some deprecated generator
+    """  Check if the conan file is using some deprecated generator
     :param main: Output stream
     :param file: Conanfile path
     """

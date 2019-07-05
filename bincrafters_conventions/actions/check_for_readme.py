@@ -2,6 +2,9 @@ import os
 
 
 def check_for_readme(main):
+    """  Check if the repo contains a readme file
+    :param main: Output stream
+    """
     if (os.path.isfile("readme") or os.path.isfile("README") or
         os.path.isfile("README.md") or os.path.isfile("readme.md")):
         main.output_result_check(passed=True, title="Readme")
